@@ -1,0 +1,537 @@
+// ===============================================================================
+//  @File Name: "Header"
+//  Description: "This file it contain all modern CSS header component codes."
+//  @Crafted by: "Beyondmarketing" | https://beyondmarketing.ma
+//  Support: Hello@beyondmarketing.ma / +212 7 08 79 00 71
+//  License: Licensed under "Beyondmarketing" | https://beyondmarketing.ma License
+// ===============================================================================
+
+#site-header.is-sticky {
+     background-color: $light;
+     border-bottom: none;
+     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+     @include animation(500ms ease-in-out 0s normal none 1 running fadeInDown);
+     .navbar-brand {
+         color: $black;
+    }
+     .navbar-nav.navbar-nav-left-side {
+         .nav-item.nav-menu-item {
+             .nav-link {
+                 color: $black;
+                 &:hover {
+                     color: $danger;
+                }
+                 &:before {
+                     background-color: $danger;
+                }
+            }
+             .nav-link.is-active {
+                 font-weight: 600;
+                 color: $danger;
+            }
+        }
+         .nav-item.nav-menu-item.dropdown {
+             .nav-link {
+                 &:hover {
+                     &:after {
+                         color: $danger;
+                    }
+                }
+            }
+        }
+    }
+     .navbar-nav.navbar-nav-right-side {
+         .nav-item.nav-menu-item {
+             .nav-link {
+                 color: $black;
+                 &:hover {
+                     color: $danger;
+                }
+            }
+        }
+    }
+}
+ #site-header {
+     background-color: $light;
+     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+     .navbar-toggler {
+         border-width: 2px;
+         border-color: $danger;
+         color: $danger;
+         .navbar-toggler-icon {
+             background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(239, 35, 60, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+        }
+         &:focus {
+             box-shadow: none;
+        }
+    }
+     .navbar-brand {
+         color: $light;
+         font-weight: 500;
+         outline: none;
+    }
+     .navbar-toggle-nav {
+         .nav-item {
+             .nav-link {
+                 position: relative;
+                 padding-bottom: 0;
+                 color: $black;
+                 @include transition(color .3s ease);
+                 &:hover {
+                     color: $danger;
+                }
+            }
+             .nav-link.nav-toggle-link-wishlist {
+                 // @include animation(tada 1.5s ease infinite);
+                 .wishlist-toggle-notice {
+                     background-color: $warning;
+                     padding: 0;
+                     text-align: center;
+                     height: 1.25rem;
+                     width: 1.25rem;
+                     font-weight: 700;
+                     line-height: 1.188rem;
+                     position: absolute;
+                     top: 0;
+                     right: 0.513rem;
+                }
+            }
+             .nav-link.nav-toggle-link-cart {
+                 // @include animation(tada 1.5s ease infinite);
+                 .cart-toggle-notice {
+                     background-color: $success;
+                     padding: 0;
+                     text-align: center;
+                     height: 1.25rem;
+                     width: 1.25rem;
+                     font-weight: 700;
+                     line-height: 1.188rem;
+                     position: absolute;
+                     top: 0;
+                     right: 0.513rem;
+                }
+            }
+        }
+    }
+     .navbar-nav.navbar-nav-left-side {
+         .nav-item.nav-menu-item {
+             .nav-link {
+                 position: relative;
+                 font-size: 1rem;
+                 font-weight: 500;
+                 text-transform: capitalize;
+                 color: $black;
+                 @include transition(color .3s ease);
+                 &:hover {
+                     color: $danger;
+                }
+            }
+             .nav-link.is-active {
+                 font-weight: 600;
+                 color: $light;
+            }
+        }
+         .nav-item.nav-menu-item.dropdown {
+             .nav-link {
+                 &:hover {
+                     &:after {
+                         content: "\f068";
+                         color: $danger;
+                         @include transform(rotate(720deg));
+                    }
+                }
+                 &:after {
+                     content: "\f067";
+                     position: relative;
+                     margin-left: 0.625rem;
+                     font-family: "Font Awesome 5 Free";
+                     font-size: 0.875rem;
+                     font-weight: 900;
+                     float: right;
+                     font-style: normal;
+                     font-variant: normal;
+                     display: inline-block;
+                     text-rendering: auto;
+                     -webkit-font-smoothing: antialiased;
+                     @include transition(0.6s ease-out);
+                }
+            }
+             .dropdown-menu.submenu-dropdown-menu {
+                 width: 100%;
+                 min-width: 14.6875rem;
+                 padding: 0;
+                 border-radius: 10px;
+                 border: none;
+                 margin: 0;
+                 margin-top: 0.625rem;
+                 margin-bottom: 0.9375rem;
+                 box-shadow: 0px 2px 4px 0px rgba(40, 40, 40, 0.1);
+                 .nav-dropdown-item {
+                     &:last-child {
+                         .dropdown-item {
+                             border-bottom: none;
+                             &:hover {
+                                 border-bottom: none;
+                            }
+                        }
+                    }
+                     .dropdown-item {
+                         position: relative;
+                         padding: 0.425rem 1.25rem;
+                         font-weight: 500;
+                         text-transform: capitalize;
+                         white-space: nowrap;
+                         line-height: 2rem;
+                         border-bottom: 1px solid #f4f4f4;
+                         @include transition(all .25s ease-in-out);
+                         &:hover {
+                             background-color: transparent;
+                             border-bottom: 1px solid #f4f4f4;
+                             color: $danger;
+                             padding-left: 40px;
+                             &:before {
+                                 opacity: 1;
+                                 left: 15px;
+                                 color: $danger;
+                            }
+                        }
+                         &:focus {
+                             background-color: transparent;
+                             border-bottom: 1px solid #f4f4f4;
+                             color: $danger;
+                        }
+                         &:before {
+                             position: absolute;
+                             top: 50%;
+                             left: 0;
+                             font-family: "Font Awesome 5 Free";
+                             font-weight: 900;
+                             content: "\f30b";
+                             display: inline-block;
+                             opacity: 0;
+                             font-style: normal;
+                             font-variant: normal;
+                             text-rendering: auto;
+                             -webkit-font-smoothing: antialiased;
+                             @include transition(all 0.3s ease);
+                             @include transform(translateY(-50%));
+                        }
+                    }
+                     .dropdown-item.is-active {
+                         background-color: $danger;
+                         border-bottom: 1px solid $danger;
+                         color: $light;
+                         &:hover {
+                             background-color: $black;
+                             border-bottom: 1px solid $black;
+                             color: $light;
+                             &:before {
+                                 color: $light;
+                            }
+                        }
+                         &:after {
+                             display: inline-block;
+                             font-style: normal;
+                             font-variant: normal;
+                             text-rendering: auto;
+                             -webkit-font-smoothing: antialiased;
+                             font-family: "Font Awesome 5 Free";
+                             font-weight: 900;
+                             content: "\f058";
+                             float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     .navbar-nav.navbar-nav-right-side {
+         .nav-item.nav-menu-item {
+             .nav-link {
+                 position: relative;
+                 color: $black;
+                 @include transition(color .3s ease);
+                 &:hover {
+                     color: $danger;
+                }
+            }
+        }
+         .nav-item.nav-menu-item.dropdown {
+             .dropdown-menu.submenu-dropdown-menu {
+                 width: 100%;
+                 min-width: 14.6875rem;
+                 padding: 0;
+                 border-radius: 10px;
+                 border: none;
+                 margin: 0;
+                 margin-top: 0.625rem;
+                 margin-bottom: 0.9375rem;
+                 box-shadow: 0px 2px 4px 0px rgba(40, 40, 40, 0.1);
+                 .nav-dropdown-item {
+                     &:last-child {
+                         .dropdown-item {
+                             border-bottom: none;
+                             &:hover {
+                                 border-bottom: none;
+                            }
+                        }
+                    }
+                     .dropdown-item {
+                         position: relative;
+                         padding: 0.425rem 1.25rem;
+                         font-weight: 500;
+                         text-transform: capitalize;
+                         white-space: nowrap;
+                         line-height: 2rem;
+                         border-bottom: 1px solid #f4f4f4;
+                         @include transition(all .25s ease-in-out);
+                         &:hover {
+                             background-color: transparent;
+                             border-bottom: 1px solid #f4f4f4;
+                             color: $danger;
+                             padding-left: 40px;
+                             &:before {
+                                 opacity: 1;
+                                 left: 15px;
+                                 color: $danger;
+                            }
+                        }
+                         &:focus {
+                             background-color: transparent;
+                             border-bottom: 1px solid #f4f4f4;
+                             color: $danger;
+                        }
+                         &:before {
+                             position: absolute;
+                             top: 50%;
+                             left: 0;
+                             font-family: "Font Awesome 5 Free";
+                             font-weight: 900;
+                             content: "\f30b";
+                             display: inline-block;
+                             opacity: 0;
+                             font-style: normal;
+                             font-variant: normal;
+                             text-rendering: auto;
+                             -webkit-font-smoothing: antialiased;
+                             @include transition(all 0.3s ease);
+                             @include transform(translateY(-50%));
+                        }
+                    }
+                     .dropdown-item.is-active {
+                         background-color: $danger;
+                         border-bottom: 1px solid $danger;
+                         color: $light;
+                         &:hover {
+                             background-color: $black;
+                             border-bottom: 1px solid $black;
+                             color: $light;
+                             &:before {
+                                 color: $light;
+                            }
+                        }
+                         &:after {
+                             display: inline-block;
+                             font-style: normal;
+                             font-variant: normal;
+                             text-rendering: auto;
+                             -webkit-font-smoothing: antialiased;
+                             font-family: "Font Awesome 5 Free";
+                             font-weight: 900;
+                             content: "\f058";
+                             float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ @media only screen and (min-width: 992px) {
+     #site-header {
+         background-color: transparent;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+         box-shadow: none;
+         padding: 0;
+         .navbar-brand {
+             padding: 0;
+        }
+         .navbar-nav {
+             .nav-item.nav-menu-item {
+                 .nav-link {
+                     padding: 0.938rem 0.938rem 0.938rem;
+                     line-height: 3.125rem;
+                     color: $light;
+                }
+            }
+        }
+         .navbar-nav.navbar-nav-left-side {
+             .nav-item.nav-menu-item {
+                 &:last-child {
+                     .nav-link {
+                         padding-right: 0;
+                    }
+                }
+                 .nav-link {
+                     color: $light;
+                     &:hover {
+                         color: $light;
+                         &:before {
+                             opacity: 1;
+                             visibility: visible;
+                             @include transform(scaleX(1));
+                        }
+                    }
+                     &:before {
+                         content: "";
+                         position: absolute;
+                         bottom: 0;
+                         left: 1rem;
+                         opacity: 0;
+                         visibility: hidden;
+                         border-radius: 0.625rem;
+                         width: 2.188rem;
+                         height: 0.25rem;
+                         background-color: $light;
+                         @include transform(scaleX(0));
+                         @include transform-origin(0 0 0);
+                         @include transition(opacity, .3s ease, visibility .3s ease, -webkit-transform .3s ease);
+                    }
+                }
+                 .nav-link.is-active {
+                     &:before {
+                         opacity: 1;
+                         visibility: visible;
+                         @include transform(scaleX(1));
+                    }
+                }
+            }
+             .nav-item.nav-menu-item.dropdown {
+                 .nav-link {
+                     &:hover {
+                         &:after {
+                             color: $light;
+                        }
+                    }
+                }
+                 .dropdown-menu.submenu-dropdown-menu {
+                     display: block;
+                     position: absolute;
+                     left: 0;
+                     right: auto;
+                     opacity: 0;
+                     visibility: hidden;
+                     margin-top: 0.9375rem;
+                     @include transition(all 0.4s ease-in-out);
+                     @include transform(translateY(20px));
+                     &:after {
+                         content: '';
+                         position: absolute;
+                         bottom: 100%;
+                         left: 32px;
+                         width: 16px;
+                         height: 16px;
+                         border-width: 8px;
+                         border-style: solid;
+                         border-color: transparent transparent $light;
+                         display: block;
+                    }
+                }
+                 &:hover {
+                     .dropdown-menu.submenu-dropdown-menu {
+                         opacity: 1;
+                         visibility: visible;
+                         @include transform(translateY(0));
+                    }
+                }
+            }
+        }
+         .navbar-nav.navbar-nav-right-side {
+             .nav-item.nav-menu-item {
+                 &:last-child {
+                     .nav-link {
+                         padding-right: 0;
+                    }
+                }
+                 .nav-link {
+                     color: $light;
+                     &:hover {
+                         color: $light;
+                    }
+                     i {
+                         vertical-align: middle;
+                    }
+                }
+                 .nav-link.nav-link-wishlist {
+                     // @include animation(tada 1.5s ease infinite);
+                     .wishlist-notice {
+                         background-color: $warning;
+                         padding: 0;
+                         text-align: center;
+                         height: 1.25rem;
+                         width: 1.25rem;
+                         font-weight: 700;
+                         line-height: 1.188rem;
+                         position: absolute;
+                         right: 0.513rem;
+                         margin-top: 0.488rem;
+                    }
+                }
+                 .nav-link.nav-link-cart {
+                     // @include animation(tada 1.5s ease infinite);
+                     .cart-notice {
+                         background-color: $success;
+                         padding: 0;
+                         text-align: center;
+                         height: 1.25rem;
+                         width: 1.25rem;
+                         font-weight: 700;
+                         line-height: 1.188rem;
+                         position: absolute;
+                         right: 0.513rem;
+                         margin-top: 0.488rem;
+                    }
+                }
+            }
+             .nav-item.nav-menu-item.dropdown {
+                 .nav-link {
+                     &:hover {
+                         &:after {
+                             color: $light;
+                        }
+                    }
+                }
+                 .dropdown-menu.submenu-dropdown-menu {
+                     display: block;
+                     position: absolute;
+                     left: 0;
+                     right: auto;
+                     opacity: 0;
+                     visibility: hidden;
+                     margin-top: 0.9375rem;
+                     @include transition(all 0.4s ease-in-out);
+                     @include transform(translateY(20px));
+                     &:after {
+                         content: '';
+                         position: absolute;
+                         bottom: 100%;
+                         left: 32px;
+                         width: 16px;
+                         height: 16px;
+                         border-width: 8px;
+                         border-style: solid;
+                         border-color: transparent transparent $light;
+                         display: block;
+                    }
+                }
+                 &:hover {
+                     .dropdown-menu.submenu-dropdown-menu {
+                         opacity: 1;
+                         visibility: visible;
+                         @include transform(translateY(0));
+                    }
+                }
+            }
+        }
+    }
+}

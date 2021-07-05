@@ -1,0 +1,107 @@
+// Locations
+
+#locations-section {
+     .list-group {
+         .list-group-item {
+             border-radius: 0;
+             border-color: transparent;
+             h4 {
+                 font-weight: 600;
+            }
+             &:hover {
+                 border-color: transparent;
+            }
+        }
+         .list-group-item.active {
+             color: $black;
+             background-color: #f6f6f6;
+             border-color: transparent;
+             border-left-width: 5px;
+             border-left-color: $danger;
+             font-weight: 600;
+        }
+    }
+     .tab-content {
+         .tab-pane {
+             .tab-pane-content {
+                 .location-card {
+                     .card-img-link {
+                         overflow: hidden;
+                         position: relative;
+                         border-top-left-radius: 0.9375rem;
+                         border-top-right-radius: 0.9375rem;
+                         .card-img-top {
+                             width: 100%;
+                             @include transition(0.3s);
+                             &:hover {
+                                 @include transform(scale(1.1));
+                            }
+                        }
+                    }
+                     .card-body {
+                         padding-top: 2.2rem!important;
+                         padding-bottom: 2.2rem !important;
+                         .location-feeds-top {
+                             font-weight: 500;
+                             .location-rating {
+                                 color: $warning;
+                            }
+                        }
+                         .card-title-link {
+                             color: $black;
+                             text-decoration: none;
+                             position: relative;
+                             z-index: 1;
+                             &:hover {
+                                 color: $danger;
+                                 text-decoration: none;
+                                 @include transition(.3s);
+                                 &:before {
+                                     width: 100%;
+                                }
+                            }
+                             &:before {
+                                 content: "";
+                                 position: absolute;
+                                 width: 0%;
+                                 height: 100%;
+                                 bottom: -5px;
+                                 left: 0;
+                                 border-bottom: 2px solid #ef233c;
+                                 z-index: -1;
+                                 @include transition(.3s);
+                            }
+                        }
+                         .location-feeds-bottom {
+                             font-weight: 500;
+                             text-transform: uppercase;
+                             .location-feeds-bottom-icons {
+                                 font-size: 1.2rem;
+                                 vertical-align: middle;
+                                 color: $danger;
+                            }
+                        }
+                         .location-posted-time {
+                             font-weight: 500;
+                             text-transform: uppercase;
+                             .location-feeds-bottom-icons {
+                                 font-size: 1.2rem;
+                                 vertical-align: middle;
+                                 color: $danger;
+                            }
+                        }
+                         .location-operations {
+                             .location-operations-subprice {
+                                 color: #c3c3c3;
+                                 font-weight: 600;
+                            }
+                             .location-operations-price {
+                                 color: $danger;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

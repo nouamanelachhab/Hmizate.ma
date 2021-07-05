@@ -1,0 +1,156 @@
+// ===============================================================================
+//  @File Name: "Slider"
+//  Description: "This file it contain all modern CSS slider component codes."
+//  @Crafted by: "Beyondmarketing" | https://beyondmarketing.ma
+//  Support: Hello@beyondmarketing.ma / +212 7 08 79 00 71
+//  License: Licensed under "Beyondmarketing" | https://beyondmarketing.ma License
+// ===============================================================================
+
+#home-slider-section {
+     position: relative;
+     overflow: hidden;
+     .home-slider-carousel {
+         .owl-item.active {
+             .home-slide-item {
+                 .home-slide-item-content {
+                     .item-sub-title {
+                         animation-duration: 1s;
+                         animation-fill-mode: both;
+                         animation-name: fadeInDown;
+                         animation-delay: 0.3s;
+                    }
+                     .item-main-title {
+                         animation-duration: 1s;
+                         animation-fill-mode: both;
+                         animation-name: fadeInDown;
+                         animation-delay: 0.5s;
+                    }
+                     .item-text {
+                         animation-duration: 1s;
+                         animation-fill-mode: both;
+                         animation-name: fadeInDown;
+                         animation-delay: 0.7s;
+                    }
+                }
+            }
+        }
+         .owl-item {
+             .home-slide-item {
+                 position: relative;
+                 overflow: hidden;
+                 z-index: 1;
+                 padding-top: 17.1875rem;
+                 padding-bottom: 22.5rem;
+                 background-repeat: no-repeat;
+                 background-position: center center;
+                 background-size: cover;
+                 &:before {
+                     content: "";
+                     position: absolute;
+                     left: 0;
+                     top: 0;
+                     width: 100%;
+                     height: 100%;
+                     z-index: -1;
+                     background-color: $black;
+                     opacity: .7;
+                }
+                 .home-slide-column {
+                     .home-slide-item-content {
+                         position: relative;
+                         text-align: center;
+                         .item-sub-title {
+                             display: inline-block;
+                             padding-top: 0.5rem;
+                             padding-bottom: 0.5rem;
+                             padding-right: 1.5rem;
+                             padding-left: 1.5rem;
+                             border-radius: 50rem;
+                             background-color: $light;
+                             color: $black;
+                             font-family: "rajdhani",sans-serif;
+                             font-weight: 700;
+                             line-height: 1;
+                             text-transform: capitalize;
+                             text-align: center;
+                             white-space: nowrap;
+                             vertical-align: baseline;
+                             &:hover {
+                                 background-color: $light;
+                                 color: $black;
+                            }
+                        }
+                         .item-main-title {
+                             text-transform: capitalize;
+                             font-weight: 700;
+                             color: $light;
+                             .special-txt {
+                                 background: linear-gradient(to right, rgb(238, 9, 121), rgb(255, 106, 0));
+                                 -webkit-background-clip: text;
+                                 -webkit-text-fill-color: transparent;
+                            }
+                        }
+                         .item-text {
+                             text-transform: capitalize;
+                             font-weight: 400;
+                             line-height: 2rem;
+                             color: $light;
+                             &:last-child {
+                                 margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+     .owl-dots {
+         position: absolute;
+         left: 0px;
+         right: 0px;
+         bottom: 1.875rem;
+         text-align: center;
+         .owl-dot {
+             position: relative;
+             width: 20px;
+             height: 20px;
+             margin-bottom: 10px;
+             border-radius: 50rem;
+             margin: 0px 7px;
+             display: inline-block;
+             background-color: $light;
+             border: 3px solid $light;
+             @include transition(0.4s all ease-in-out);
+             &:hover {
+                 background-color: $danger;
+            }
+        }
+         .owl-dot.active {
+             background-color: $danger;
+             &:hover {
+                 background-color: $danger;
+            }
+        }
+    }
+}
+ @media (max-width: 767.98px) {
+     #home-slider-section {
+         .home-slider-carousel {
+             .owl-item {
+                 .home-slide-item {
+                     .home-slide-item-content {
+                         .item-sub-title {
+                             margin-bottom: 1rem;
+                        }
+                         .item-main-title {
+                             font-size: calc(1.375rem + 1.5vw);
+                        }
+                         .item-text {
+                             font-size: 1.20rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+// Home Categories
+
+#categories-section {
+     .aside-card {
+         border-radius: 0.9375rem;
+         box-shadow: 0 0px 30px 0px rgb(0 0 30 / 6%);
+         .categories-content-a {
+             .cat-a-title {
+                 color: $danger;
+                 font-weight: 600;
+                 text-transform: capitalize;
+                 margin-bottom: 1.5rem;
+                 &:last-child {
+                     margin-bottom: 0;
+                }
+            }
+             .list-group {
+                 box-shadow: none;
+				 .list-group-item.active {
+                     color: $danger;
+                     background-color: transparent;
+                     border: none;
+                     border-radius: 0;
+                     font-weight: 700;
+                }
+                 .list-group-item {
+                     background-color: transparent;
+                     border: none;
+                     border-radius: 0;
+                     color: $black;
+                     padding-left: 0;
+                     padding-right: 0;
+                     font-weight: 500;
+                     text-transform: capitalize;
+                     i {
+                         font-size: 1.5rem;
+                    }
+                     &:hover {
+                         color: $danger;
+                    }
+                }
+            }
+             .btn-all-categories {
+                 display: block;
+                 color: $black;
+                 font-weight: 600;
+                 text-align: left;
+                 text-transform: capitalize;
+                 text-decoration: none;
+                 padding-left: 0;
+                 padding-right: 0;
+                 &:hover {
+                     color: $danger;
+                     text-decoration: underline;
+                }
+            }
+        }
+    }
+     .article-card {
+         border-radius: 0.9375rem;
+         box-shadow: 0 0px 30px 0px rgb(0 0 30 / 6%);
+         .card-img-link {
+             overflow: hidden;
+             position: relative;
+             border-top-left-radius: 0.9375rem;
+             border-top-right-radius: 0.9375rem;
+             .card-img-top {
+                 width: 100%;
+                 @include transition(0.3s);
+                 &:hover {
+                     @include transform(scale(1.1));
+                }
+            }
+        }
+         .card-body {
+             .article-feeds-top {
+                 font-weight: 500;
+                 .article-rating {
+                     font-size: 1rem;
+                     color: #ffab01;
+                }
+                 .article-feeds-top-icons {
+                     font-size: 1.5rem;
+                     color: $danger;
+                     i {
+                         vertical-align: middle;
+                    }
+                }
+            }
+             .card-title-link {
+                 color: $black;
+                 text-decoration: none;
+                 position: relative;
+                 z-index: 1;
+                 &:hover {
+                     color: $danger;
+                     text-decoration: none;
+                     @include transition(.3s);
+                     &:before {
+                         width: 100%;
+                    }
+                }
+                 &:before {
+                     content: "";
+                     position: absolute;
+                     width: 0%;
+                     height: 100%;
+                     bottom: -5px;
+                     left: 0;
+                     border-bottom: 2px solid #ef233c;
+                     z-index: -1;
+                     @include transition(.3s);
+                }
+            }
+             .article-feeds-bottom {
+                 font-weight: 500;
+                 text-transform: uppercase;
+                 .article-feeds-bottom-icons {
+                     font-size: 1.5rem;
+                     vertical-align: middle;
+                     color: $danger;
+                }
+            }
+             .article-operations {
+                 .article-operations-subprice {
+                     color: #c3c3c3;
+                     font-weight: 600;
+                }
+                 .article-operations-price {
+                     color: $danger;
+                }
+                 .btn.btn-action {
+                     color: $light;
+                     background-color: $danger;
+                     border-color: $danger;
+                     padding: 0.75rem 1rem;
+                     border-radius: 50px;
+                     font-weight: 500;
+                     text-transform: capitalize;
+                     box-shadow: 0px 10px 30px 0px rgba(248,92,112,0.4);
+                     i {
+                         font-size: 1.5rem;
+                         vertical-align: middle;
+                    }
+                     &:hover {
+                         color: $light;
+                         background-color: $black;
+                         border-color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+ @media only screen and (min-width: 992px) {
+     #categories-section {
+         .article-card {
+             .card-img-link {
+                 .card-img-top {
+                     height: 18.7vw;
+                     object-fit: cover;
+                }
+            }
+             .card-body {
+                 padding-top: 2.2rem!important;
+            }
+        }
+    }
+}
+ @media only screen and (max-width: 1098px) {
+     #categories-section {
+         .article-card {
+             .card-img-link {
+                 .card-img-top {
+                     height: 27.7vw;
+                     object-fit: cover;
+                }
+            }
+             .card-body {
+                 padding-top: 1rem !important;
+                 .article-feeds-top {
+                     .list-inline-item {
+                         &:not(:last-child) {
+                             margin-right: 0.3rem;
+                        }
+                         &:nth-last-child(3) {
+                             display: none;
+                        }
+                    }
+                }
+                 .article-feeds-bottom {
+                     margin-bottom: 0;
+                }
+                 .card-title {
+                     font-size: calc(1.275rem + 0.2vw);
+                }
+                 .article-operations {
+                     .article-operations-price {
+                         font-size: calc(1.3rem + 0.3vw);
+                    }
+                }
+            }
+        }
+    }
+}

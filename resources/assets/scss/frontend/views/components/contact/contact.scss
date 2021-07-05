@@ -1,0 +1,80 @@
+// ===============================================================================
+//  @File Name: "Contact"
+//  Description: "This file it contain all modern CSS contact page codes."
+//  @Crafted by: "Beyondmarketing" | https://beyondmarketing.ma
+//  Support: Hello@beyondmarketing.ma / +212 7 08 79 00 71
+//  License: Licensed under "Beyondmarketing" | https://beyondmarketing.ma License
+// ===============================================================================
+
+#contact-section {
+     .contact-form-wrap {
+         .card-body {
+             .contact-heading {
+                 .h2 {
+                     line-height: 1.5;
+                     text-transform: capitalize;
+                }
+            }
+             .contact-form {
+                 .btn-send {
+                     font-weight: 500;
+                     text-transform: uppercase;
+                     padding: 0.575rem 0.75rem;
+                     border-radius: 0;
+                }
+            }
+        }
+    }
+     .contact-info-wrap {
+         .card-body {
+             .media {
+                 align-items: center;
+                 margin-bottom: 1.5rem;
+                 &:last-child {
+                     margin-bottom: 0;
+                }
+                 .media-icon {
+                     .icon {
+                         i {
+                             color: $danger;
+                             font-size: 45px;
+							 &:before {
+							     vertical-align: middle;
+							 }
+                        }
+                    }
+                }
+                 .media-body {
+                     .lead {
+                         font-size: 16px;
+                         font-weight: 500;
+                         line-height: 2rem;
+                         .special {
+                             font-weight: 600;
+                             text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     .contact-support-wrap {
+         .card-header {
+             font-weight: 600;
+             text-transform: capitalize;
+        }
+         .card-body {
+             .lead {
+                 font-weight: 400;
+                 line-height: 2rem;
+                 text-transform: capitalize;
+            }
+             .btn {
+                 font-weight: 500;
+                 text-transform: uppercase;
+                 padding: 0.575rem 0.75rem;
+                 border-radius: 0;
+            }
+        }
+    }
+}

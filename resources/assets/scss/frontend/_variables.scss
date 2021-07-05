@@ -1,0 +1,83 @@
+// Custom Variables
+
+// Font Awesome
+$fa-font-path:  "~@fortawesome/fontawesome-free/webfonts";
+
+// Body
+$body-bg:       #f9f9f9;
+$body-color:    #111111;
+
+// Typography
+
+
+// Theme Colors
+$min-contrast-ratio:   3.5;
+
+$primary:     #4361ee;
+$secondary:   #00296b;
+$success:     #68d14d;
+$info:        #4cc9f0;
+$warning:     #FF9500;
+$danger:      #ef233c;
+$light:       #ffffff;
+$lighten:     #fbf9f9;
+$brighten:    #fcfcfc;
+$shiny:       #f8f8f8;
+$dark:        #202020;
+$black:       #000000;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+// Custom Theme Colors map
+$custom-colors: (
+  "lighten":  $lighten,
+  "brighten": $brighten,
+  "shiny":    $shiny
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Custom Spacing
+$enable-negative-margins: true;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: ($spacer * 5)
+);
+
+// Custom Containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1240px,
+  xxl: 1420px
+);
+
+// Custom Gutters
+$grid-gutter-width: 1.5rem;
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2.5,
+  6: ($spacer * 3)
+);
+

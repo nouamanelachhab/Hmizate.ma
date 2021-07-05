@@ -1,0 +1,349 @@
+// ===============================================================================
+//  @File Name: "Reset"
+//  Description: "This file it contain all modern CSS reset codes."
+//  @Crafted by: "Beyondmarketing" | https://beyondmarketing.ma
+//  Support: Hello@beyondmarketing.ma / +212 7 08 79 00 71
+//  License: Licensed under "Beyondmarketing" | https://beyondmarketing.ma License
+// ===============================================================================
+
+:root {
+     --animate-delay: 0.4s;
+}
+ ::-webkit-scrollbar {
+     width: 8px;
+     height: 8px;
+}
+ ::-webkit-scrollbar-thumb {
+     background-color: $danger;
+     border-color: $danger;
+}
+ ::-webkit-scrollbar-thumb:hover {
+     background-color: $black;
+     border-color: $black;
+}
+ ::-webkit-scrollbar-track {
+     background-color: $brighten;
+}
+ ::selection {
+     color: $light;
+     background-color: $danger;
+}
+ body {
+     color: $black;
+     font-weight: 400;
+     font-family: 'Poppins', 'Open Sans', 'Source Sans Pro', 'Cairo', 'Rajdhani', sans-serif!important;
+     line-height: normal!important;
+     overflow-x: hidden;
+}
+ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+     margin-top: 0;
+     margin-bottom: 0.5rem;
+     font-weight: 500;
+     line-height: 1.2;
+     &:last-child {
+         margin-bottom: 0;
+    }
+}
+ p {
+     margin-top: 0;
+     margin-bottom: 1rem;
+     &:last-child {
+         margin-bottom: 0;
+    }
+}
+ a {
+     display:inline-block;
+     text-decoration:none;
+     color: $black;
+     @include transition(all ease .3s);
+     &:hover {
+         text-decoration:none;
+         color: $danger;
+    }
+     &:focus {
+         text-decoration: none;
+    }
+}
+ button {
+     outline: 0!important;
+     box-shadow: none;
+     border: none;
+     &:focus {
+         box-shadow:none;
+    }
+}
+ img {
+     max-width:100%;
+     height:auto;
+}
+ ul {
+     list-style:none;
+     padding:0;
+     margin:0;
+}
+ input[type=text], input[type=email], input[type=tel], textarea {
+     text-transform: none;
+     @include input-placeholder {
+         text-transform: capitalize;
+    }
+}
+ .form-label {
+     text-transform: capitalize!important;
+     font-weight: 500!important;
+}
+ .input-group-text {
+     background-color: $light!important;
+     border: 2px solid #ccc!important;
+     border-right: none!important;
+     font-size: 1.25rem!important;
+	 line-height: normal!important;
+}
+ .form-control, .form-select {
+     padding: 0.675rem 0.75rem!important;
+     font-weight: normal!important;
+     border: 2px solid #ccc!important;
+	 line-height: normal!important;
+     &:focus {
+         color: $black!important;
+         border-color: #ccc!important;
+         outline: 0;
+         box-shadow: none!important;
+    }
+}
+ .input-group > .form-control, .input-group > .form-select {
+     border-left-width: 1px!important;
+}
+ textarea.form-control {
+     resize: none;
+}
+ .form-check {
+     .form-check-input {
+         &:focus {
+             outline: 0;
+             box-shadow: none!important;
+        }
+    }
+     .form-check-input:checked {
+         background-color: $danger!important;
+         border-color: $danger!important;
+         &:active {
+             filter: none!important;
+        }
+    }
+     .form-check-label {
+         text-transform: capitalize;
+         font-weight: 400;
+         span {
+             font-weight: 600;
+             color: $black;
+        }
+         a {
+             font-weight: 500;
+             text-decoration: underline;
+             color: $danger;
+             &:hover {
+                 color: $danger;
+            }
+        }
+    }
+     &:last-child {
+         margin-bottom: 0;
+    }
+}
+ .custom-btn {
+     display: inline-block;
+     position: relative;
+     z-index: 1;
+     font-weight: 600;
+     line-height: normal;
+     text-transform: capitalize;
+     text-align: center;
+     text-decoration: none;
+     vertical-align: middle;
+     cursor: pointer;
+     user-select: none;
+     background-color: $danger;
+     border: 2px solid $danger;
+     color: $light;
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     border-radius: 0.25rem;
+     @include transition(all ease .3s);
+     &:hover {
+         background-color: transparent;
+         border: 2px solid $danger;
+         color: $danger;
+    }
+}
+ .custom-outline-btn {
+     display: inline-block;
+     position: relative;
+     z-index: 1;
+     font-weight: 600;
+     line-height: normal;
+     text-transform: capitalize;
+     text-align: center;
+     text-decoration: none;
+     vertical-align: middle;
+     cursor: pointer;
+     user-select: none;
+     background-color: transparent;
+     border: 2px solid $danger;
+     color: $danger;
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     border-radius: 0.25rem;
+     @include transition(all ease .3s);
+     &:hover {
+         background-color: $danger;
+         border: 2px solid $danger;
+         color: $light;
+    }
+}
+ .btn-check:focus + .btn, .custom-btn, .btn:focus {
+     outline: 0!important;
+     box-shadow: none!important;
+}
+ .media {
+     display: flex;
+     align-items: flex-start;
+}
+ .media-body {
+     flex: 1;
+}
+ .list-group {
+     border-radius: 0;
+     box-shadow: 0 0px 30px 0px rgba(0, 0, 30, 0.06);
+     .list-group-item {
+         color: $black;
+         background-color: $light;
+         border-color: #eee;
+         font-weight: 500;
+         text-transform: capitalize;
+         &:hover {
+             color: $danger;
+             background-color: $light;
+             border-color: #eee;
+        }
+         &:focus {
+             color: $danger;
+             background-color: $light;
+             border-color: #eee;
+        }
+    }
+     .list-group-item.active {
+         color: $light;
+         background-color: $danger;
+         border-color: $danger;
+         font-weight: 600;
+    }
+}
+ .flatpickr-calendar {
+     -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)!important;
+     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)!important;
+     .flatpickr-months {
+         background-color: $brighten;
+         border: 1px solid $brighten;
+         height: 50px;
+         .flatpickr-month {
+             height: 100%;
+             color: $black;
+             fill: $black;
+             .flatpickr-current-month {
+                 height: 100%;
+                 line-height: 2;
+                 .flatpickr-monthDropdown-months {
+                     font-weight: 400;
+                     text-transform: capitalize;
+                     &:hover {
+                         background-color: transparent;
+                    }
+                }
+                 .numInputWrapper {
+                     &:hover {
+                         background-color: transparent;
+                    }
+                }
+            }
+        }
+         .flatpickr-prev-month {
+             padding: 10px;
+             margin-top: 8px;
+             color: $black;
+             fill: $black;
+             &:hover {
+                 color: $danger;
+            }
+        }
+         .flatpickr-months {
+             padding: 10px;
+             margin-top: 8px;
+             color: $black;
+             fill: $black;
+        }
+         .flatpickr-next-month {
+             padding: 10px;
+             margin-top: 8px;
+             color: $black;
+             fill: $black;
+             &:hover {
+                 color: $danger;
+            }
+        }
+    }
+     .flatpickr-innerContainer {
+         .flatpickr-rContainer {
+             .flatpickr-weekdays {
+                 height: auto;
+                 .flatpickr-weekdaycontainer {
+                     .flatpickr-weekday {
+                         background-color: $danger;
+                         border: 1px solid $danger;
+                         color: $light;
+                         padding: 0.5rem;
+                         padding-top: 0.7rem;
+                         padding-bottom: 0.7rem;
+                         font-weight: 600;
+                         text-transform: capitalize;
+                         text-align: left;
+                    }
+                }
+            }
+             .flatpickr-days {
+                 .dayContainer {
+                     padding: 0.5rem;
+                     .flatpickr-day {
+                         color: $black;
+                         &:hover {
+                             background-color: $black;
+                             border-color: $black;
+                             color: $light;
+                        }
+                    }
+                     .flatpickr-day.today {
+                         background-color: $danger;
+                         border-color: $danger;
+                         color: $light;
+                         font-weight: 500;
+                         &:hover, &:focus {
+                             background-color: $black;
+                             border-color: $black;
+                             color: $light;
+                        }
+                    }
+                     .flatpickr-day.selected {
+                         background-color: #ffd7d4;
+                         border-color: #ffd7d4;
+                         color: $danger;
+                         font-weight: 500;
+                         &:hover {
+                             background-color: $danger;
+                             border-color: $danger;
+                             color: $light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

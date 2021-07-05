@@ -1,0 +1,126 @@
+// Home Cities
+
+#cities-section {
+     .section-title {
+         h2 {
+             text-transform: capitalize;
+             margin-bottom: 0;
+        }
+    }
+     .btn-view-all {
+         color: $black;
+         font-weight: 600;
+         text-decoration: none;
+         text-transform: capitalize;
+         &:hover {
+             color: $danger;
+             text-decoration: underline;
+        }
+         &:focus {
+             box-shadow: none;
+        }
+    }
+     .cities-card {
+         .card-img-link {
+             display: block;
+             overflow: hidden;
+             position: relative;
+             border-radius: 10px;
+             .cities-card-img {
+                 width: 100%;
+                 @include transition(0.3s);
+                 &:hover {
+                     @include transform(scale(1.1));
+                }
+            }
+        }
+         .card-body {
+             .card-title {
+                 .card-title-link {
+                     color: $black;
+                     text-decoration: none;
+                     position: relative;
+                     z-index: 1;
+                     &:hover {
+                         color: $danger;
+                         text-decoration: none;
+                         @include transition(.3s);
+                         &:before {
+                             width: 100%;
+                        }
+                    }
+                     &:before {
+                         content: "";
+                         position: absolute;
+                         width: 0%;
+                         height: 100%;
+                         bottom: -5px;
+                         left: 0;
+                         border-bottom: 2px solid $danger;
+                         z-index: -1;
+                         @include transition(.3s);
+                    }
+                }
+            }
+             .card-desc {
+                 font-weight: 500;
+                 text-transform: capitalize;
+            }
+        }
+    }
+}
+ @media only screen and (min-width: 992px) {
+     .cities-card {
+         .card-img-link {
+             .cities-card-img {
+                 height: 7.01vw;
+                 object-fit: cover;
+            }
+        }
+    }
+}
+ @media (max-width: 991.98px) {
+     #cities-section {
+         .section-title {
+             h2 {
+                 font-size: 1.375rem;
+            }
+        }
+         .cities-card {
+             .card-body {
+                 width: calc(100% - 30px);
+                 margin-left: auto;
+                 margin-right: auto;
+                 background-color: #fff;
+                 box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
+                 padding: 1rem 1rem;
+                 position: relative;
+                 margin-top: -30px;
+                 border-radius: 5px;
+                 .card-title {
+                     margin-bottom: 0.7rem;
+                }
+                 .card-desc {
+                     display: inline-block;
+                     margin-bottom: 2rem;
+                     padding-top: 0.5rem;
+                     padding-bottom: 0.5rem;
+                     padding-right: 1rem;
+                     padding-left: 1rem;
+                     border-radius: 50rem;
+                     background-color: #ffd7d4;
+                     color: #ef233c;
+                     font-weight: 600;
+                     line-height: 1;
+                     text-align: center;
+                     white-space: nowrap;
+                     vertical-align: baseline;
+                     &:hover {
+                         background-color: $danger;
+                         color: $light;
+                    }
+                }
+            }
+        }
+    }
+}

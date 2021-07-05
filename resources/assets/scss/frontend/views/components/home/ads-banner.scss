@@ -1,0 +1,19 @@
+// Home ADS Banner
+
+#ads-banner-section {
+     .ads-banner-content {
+         border: 2px solid #c1c1c1;
+         border-radius: 2rem;
+         .ads-banner-title {
+             text-transform: uppercase;
+             font-size: 2.5rem;
+             margin-bottom: 1rem;
+        }
+         .ads-banner-size {
+             font-size: 4rem;
+             font-weight: 200;
+             line-height: 1;
+             color: #c3c3c3;
+        }
+    }
+}

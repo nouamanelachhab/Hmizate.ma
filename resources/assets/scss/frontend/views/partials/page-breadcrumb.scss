@@ -1,0 +1,38 @@
+// Page Breadcrumb
+
+#breadcrumb-list {
+     .breadcrumb-item {
+         font-weight: 500;
+         text-transform: capitalize;
+         .breadcrumb-link {
+             position: relative;
+             text-decoration: none;
+             color: $black;
+             @include transition(color 0.3s ease);
+             &:hover {
+                 color: $danger;
+            }
+        }
+    }
+     .breadcrumb-item + .breadcrumb-item {
+         padding-left: 1rem;
+         &:before {
+             content: "\f30b";
+             position: relative;
+             padding-right: 1rem;
+             display: inline-block;
+             font-family: "Font Awesome 5 Free";
+             font-weight: 900;
+             font-style: normal;
+             font-variant: normal;
+             float: none;
+             text-rendering: auto;
+             -webkit-font-smoothing: antialiased;
+             color: $black;
+        }
+    }
+     .breadcrumb-item.active {
+         font-weight: 600;
+         color: $danger;
+    }
+}

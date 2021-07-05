@@ -1,0 +1,225 @@
+// ===============================================================================
+//  @File Name: "Cart"
+//  Description: "This file it contain all modern CSS cart component codes."
+//  @Crafted by: "Beyondmarketing" | https://beyondmarketing.ma
+//  Support: Hello@beyondmarketing.ma / +212 7 08 79 00 71
+//  License: Licensed under "Beyondmarketing" | https://beyondmarketing.ma License
+// ===============================================================================
+
+#cart-section {
+     .first-row {
+         margin-bottom: 1.5rem;
+         &:last-child {
+             margin-bottom: 0;
+        }
+         .empty-cart {
+             .empty-cart-heading {
+            }
+             .empty-cart-text {
+                 .empty-cart-link {
+                }
+            }
+        }
+    }
+     .second-row {
+         margin-bottom: 1.5rem;
+         &:last-child {
+             margin-bottom: 0;
+        }
+         .card {
+             .card-header {
+                 border: none;
+                 box-shadow: none;
+                 .card-header-title {
+                     color: $black;
+                     font-weight: 500;
+                     text-transform: capitalize;
+                     margin-bottom: 0;
+                     .special-header-title {
+                         color: $danger;
+                         font-weight: 600;
+                    }
+                }
+                 .card-header-link {
+                     color: $black;
+                     font-weight: 500;
+                     text-transform: capitalize;
+                     text-decoration: none;
+                     &:hover {
+                         color: $danger;
+                         text-decoration: underline;
+                    }
+                }
+            }
+             .table-content {
+                 .table {
+                     .table-header {
+                         background-color: $black;
+                         tr {
+                             th {
+                                 padding: 1rem;
+                                 border: none;
+                                 font-weight: 600;
+                                 text-transform: capitalize;
+                                 text-align: left;
+                                 color: $light;
+                            }
+                        }
+                    }
+                     .table-body {
+                         tr {
+                             border-bottom: 1px solid #eee;
+                             &:last-child {
+                                 border-bottom: none;
+                            }
+                             td {
+                                 padding: 1rem;
+                                 vertical-align: middle;
+                            }
+                             .product-thumbnail {}
+                             .product-name {
+                                 .product-name-title {
+                                     color: $black;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     text-decoration: none;
+                                     max-width: 15.3125rem;
+                                     &:hover {
+                                         color: $danger;
+                                         text-decoration: underline;
+                                    }
+                                }
+                                 .product-name-category {
+                                     display: block;
+                                     color: $danger;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     text-decoration: none;
+                                     &:hover {
+                                         color: $black;
+                                         text-decoration: underline;
+                                    }
+                                }
+                            }
+                             .product-price {
+                                 .original-price {
+                                     display: inline-block;
+                                     width: 100%;
+                                     color: $danger;
+                                     font-size: 14px;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     text-align: left;
+                                     line-height: normal;
+                                     &:hover {
+                                         color: $black;
+                                    }
+                                     &:last-child {
+                                         margin-bottom: 0;
+                                    }
+                                }
+                                 .old-price {
+                                     display: inline-block;
+                                     width: 100%;
+                                     color: $black;
+                                     font-size: 14px;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     text-align: left;
+                                     line-height: normal;
+                                     &:hover {
+                                         color: $danger;
+                                    }
+                                }
+                            }
+                             .product-quantity {
+							     .form-control {
+								     &:focus {
+									     border-color: #ced4da;
+									 }
+								 }
+							 }
+                             .product-subtotal {
+                                 .subtotal-price {
+                                     display: inline-block;
+                                     width: 100%;
+                                     color: $danger;
+                                     font-size: 14px;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     text-align: left;
+                                     line-height: normal;
+                                     &:hover {
+                                         color: $black;
+                                    }
+                                     &:last-child {
+                                         margin-bottom: 0;
+                                    }
+                                }
+                            }
+                             .product-remove {
+                            }
+                        }
+                    }
+                }
+                 .table-bottom-actions {
+                     border: none;
+                     border-radius: 0;
+					 .btn {
+					     padding: 0.75rem 1.5rem;
+						 font-weight: 500;
+						 text-transform: capitalize;
+						 line-height: normal;
+					 }
+                }
+            }
+        }
+    }
+     .third-row {
+         margin-bottom: 1.5rem;
+         &:last-child {
+             margin-bottom: 0;
+        }
+         .card {
+             .shopping-coupon-code {
+                 .input-group {
+                     .form-control {
+                         height: 3.5rem!important;
+                    }
+                }
+            }
+             .cart-totals-desc {
+                 .card-header {
+                     border: none;
+                     box-shadow: none;
+                     .card-header-title {
+                         font-weight: 500;
+                         text-transform: capitalize;
+						 margin-bottom: 0;
+                    }
+                    .special-header-title {
+                         color: $light;
+                         font-weight: 600;
+                    }
+                }
+                 .card-body {
+                     .list-group {
+                         .list-group-item {
+                             .list-group-item-title {
+                                 font-weight: 500;
+                                 text-transform: capitalize;
+                            }
+                             .list-group-item-title.special-item-title {
+                                 font-weight: 600;
+                            }
+                             .badge {
+                                 padding: 0.5rem 1rem;
+                                 font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

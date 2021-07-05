@@ -1,0 +1,245 @@
+// FAQs
+
+#faqs-section {
+     .section-heading {
+         .section-subtitle {
+             display: inline-block;
+             padding-top: 0.5rem;
+             padding-bottom: 0.5rem;
+             padding-right: 1.5rem;
+             padding-left: 1.5rem;
+             border-radius: 50rem;
+             background-color: $light;
+             border: 1px solid $light;
+             color: $black;
+             font-family: "rajdhani", sans-serif;
+             font-weight: 700;
+             line-height: 1;
+             text-transform: capitalize;
+             text-align: center;
+             white-space: nowrap;
+             vertical-align: baseline;
+             box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+         .section-title {
+             text-transform: capitalize;
+             font-weight: 600;
+             .section-special-title {
+                 color: $danger;
+            }
+        }
+         .section-heading-title {
+             text-transform: capitalize;
+             font-weight: 500;
+			 color: $black;
+        }
+         .section-text {
+             text-transform: capitalize;
+             &:last-child {
+                 margin-bottom: 0;
+                 line-height: 1.7rem;
+            }
+        }
+         .section-btn {
+             color: $light;
+			 background-color: $danger;
+			 border: 2px solid $danger;
+			 border-radius: 50rem;
+			 padding: 1.25rem 3.125rem 1.25rem 3.125rem;
+			 font-size: 1.25rem;
+			 text-transform: capitalize;
+			 font-weight: 500;
+			 &:hover {
+                color: $danger;
+				background-color: transparent;
+				border: 2px solid $danger;
+			 }
+        }
+    }
+     .special-broken-line {
+         background-color: #dee2e6;
+         opacity: 1;
+    }
+     .faq-column-content-a {
+         .faq-column-content-a-title {
+             position: relative;
+             padding: 1rem 1rem;
+             margin-bottom: 1.5rem;
+             background-color: $black;
+             color: $light;
+             box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+         #accordion {
+             .card {
+                 border: none;
+                 box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                 margin-bottom: 1rem;
+                 &:last-child {
+                     margin-bottom: 0;
+                }
+                 .card-header {
+                     background-color: $light;
+                     border: none;
+                     border-radius: 0;
+                     padding: 1.0625rem 1rem;
+                     .card-title {
+                         margin-bottom: 0;
+                         line-height: normal;
+                         .btn-link {
+                             position: relative;
+                             padding: 0;
+                             width: 100%;
+                             background-color: transparent;
+                             color: $black;
+                             text-decoration: none;
+                             text-transform: capitalize;
+                             text-align: left;
+                             font-size: 1.0625rem;
+                             font-weight: 500;
+                             line-height: 1.7;
+                             white-space: inherit;
+                             .title-prefix {
+							     color: $danger;
+								 letter-spacing: 2px;
+								 font-weight: 700;
+							 }
+							 &:hover {
+                                 color: $danger;
+                                 text-decoration: underline;
+                            }
+                             &:before {
+                                 display: inline-block;
+                                 position: absolute;
+                                 top: 50%;
+                                 right: 0;
+                                 font-style: normal;
+                                 font-variant: normal;
+                                 text-rendering: auto;
+                                 -webkit-font-smoothing: antialiased;
+                                 font-family: "Font Awesome 5 Free";
+                                 font-weight: 900;
+                                 content: "\f068";
+                                 width: 35px;
+                                 height: 35px;
+                                 line-height: 35px;
+                                 font-size: 13px;
+                                 background-color: $black;
+                                 border: 1px solid $black;
+                                 color: $light;
+                                 text-align: center;
+                                 @include transform(translateY(-50%));
+                                 @include transition(all 0s ease-out 0s);
+                            }
+                        }
+                         .btn-link.collapsed {
+                             &:before {
+                                 content: "\f067";
+                                 background-color: $danger;
+                                 border: 1px solid $danger;
+                                 color: $light;
+                            }
+                        }
+                    }
+                }
+                 .card-body {
+                     border-top: 1px solid #eee;
+                     .card-text {
+                         text-transform: capitalize;
+                         line-height: 1.875rem;
+                    }
+                }
+            }
+        }
+    }
+     .faq-column-content-b {
+         .faq-column-content-b-title {
+             position: relative;
+             padding: 1rem 1rem;
+             margin-bottom: 1.5rem;
+             background-color: $danger;
+             color: $light;
+             box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+         #accordion-2 {
+             .card {
+                 border: none;
+                 box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                 margin-bottom: 1rem;
+                 &:last-child {
+                     margin-bottom: 0;
+                }
+                 .card-header {
+                     background-color: $light;
+                     border: none;
+                     border-radius: 0;
+                     padding: 1.0625rem 1rem;
+                     .card-title {
+                         margin-bottom: 0;
+                         line-height: normal;
+                         .btn-link {
+                             position: relative;
+                             padding: 0;
+                             width: 100%;
+                             background-color: transparent;
+                             color: $black;
+                             text-decoration: none;
+                             text-transform: capitalize;
+                             text-align: left;
+                             font-size: 1.0625rem;
+                             font-weight: 500;
+                             line-height: 1.7;
+                             white-space: inherit;
+                             .title-prefix {
+							     color: $danger;
+								 letter-spacing: 2px;
+								 font-weight: 700;
+							 }
+                             &:hover {
+                                 color: $danger;
+                                 text-decoration: underline;
+                            }
+                             &:before {
+                                 display: inline-block;
+                                 position: absolute;
+                                 top: 50%;
+                                 right: 0;
+                                 font-style: normal;
+                                 font-variant: normal;
+                                 text-rendering: auto;
+                                 -webkit-font-smoothing: antialiased;
+                                 font-family: "Font Awesome 5 Free";
+                                 font-weight: 900;
+                                 content: "\f068";
+                                 width: 35px;
+                                 height: 35px;
+                                 line-height: 35px;
+                                 font-size: 13px;
+                                 background-color: $black;
+                                 border: 1px solid $black;
+                                 color: $light;
+                                 text-align: center;
+                                 @include transform(translateY(-50%));
+                                 @include transition(all 0s ease-out 0s);
+                            }
+                        }
+                         .btn-link.collapsed {
+                             &:before {
+                                 content: "\f067";
+                                 background-color: $danger;
+                                 border: 1px solid $danger;
+                                 color: $light;
+                            }
+                        }
+                    }
+                }
+                 .card-body {
+                     border-top: 1px solid #eee;
+                     .card-text {
+                         text-transform: capitalize;
+                         line-height: 1.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
