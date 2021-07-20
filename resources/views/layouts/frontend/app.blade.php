@@ -14,6 +14,7 @@
   <link rel="shortcut icon" href="{{ asset('favicons/favicon.ico') }}">
   @stack('before-styles')
   <link rel="stylesheet" href="{{ mix('assets/css/frontend/app.css') }}">
+  
   @stack('after-styles')
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>

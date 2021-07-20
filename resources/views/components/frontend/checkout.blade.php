@@ -4,7 +4,7 @@
 		    <div class="col-12 col-lg-7 mb-lg-0 mb-4">
 			    <div class="checkout-informations card border-0 shadow-sm">
 					<div class="card-body p-4">
-					    <form class="checkout-form" method="POST" action="{{ route('checkout') }}">
+					    <form class="checkout-form" method="GET" action="{{ route('checkout') }}">
 							@csrf
 						    
 							<ul class="nav nav-tabs" id="checkoutTab" role="tablist">
@@ -114,20 +114,13 @@
 								            @enderror
 								        </div>{{-- End Column --}}
 									
-								        <div class="col-md-12">
-								            {!! Captcha::display() !!}
-								            @error('g-recaptcha-response')
-									            <span class="invalid-feedback d-block mt-2 text-danger rounded" role="alert">
-										            <span><i class="fas fa-exclamation-triangle"></i></span> <strong>{{ $message }}</strong>
-									            </span>
-								            @enderror
-								        </div>{{-- End Column --}}
+								       
 										
 								        <div class="col-md-12">
 								            <div class="form-check">
 									            <input type="radio" class="form-check-input" id="conditions-link" checked>
 										        <label class="form-check-label" for="conditions-link">
-										            {{ __('i have read and accept') }} <span>hmizate's</span> <a href="{{ route('terms-of-service') }}">{{ __('terms of service') }}</a> {{ __('and') }} <a href="{{ route('privacy-policy') }}">{{ __('privacy policy') }}</a>.
+										            {{ __('i have read and accept') }} <span>hmizate's</span> <a href="">{{ __('terms of service') }}</a> {{ __('and') }} <a href="">{{ __('privacy policy') }}</a>.
 										        </label>
 									        </div>
 								        </div>{{-- End Column --}}

@@ -52,3 +52,15 @@ Route::get('/contact', function () {
 Route::get('/faqs', function () {
     return view('frontend.pages.faqs');
 })->name('faqs');
+
+// Login Page
+Route::get('/login', function () {
+    return view('frontend.pages.login');
+});
+
+// Login Page
+Route::get('/dashboard', function () {
+    return view('admin.pages.dashboard');
+});
+	
+	
